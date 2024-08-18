@@ -1,0 +1,21 @@
+{
+   "root": true,
+   "extends": ["plugin:react/recommended", "plugin:jsdoc/recommended", "standard", "prettier"],
+   "plugins": ["jsdoc"],
+   "ignorePatterns": ["temp.js", "**/vendor/*.js", "node_modules"],
+   "parserOptions": {
+      "ecmaFeatures": {
+         "jsx": true
+      }
+   },
+   "rules": {
+      "semi": "off",
+      "indent": ["warn", 3],
+      "no-unused-vars": "warn",
+      "react/prop-types": "off",
+      "jsdoc/require-param-description": 0,
+      "jsdoc/require-returns-description": 0,
+      "jsdoc/require-jsdoc": 0,
+      "react/react-in-jsx-scope": "off"
+   }
+}
